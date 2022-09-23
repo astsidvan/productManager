@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea37d98b-0752-4df3-8a5b-cc861f0d142f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Manager/ProductManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domein/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domein/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domein/Smartphone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mashka/ProductTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Repository/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domein/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domein/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mashka/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mashka/ProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +43,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_directory_selection": "C:/idea/productManager/src/test/java",
-    "last_opened_file_path": "C:/idea/billboardManager"
+    "last_opened_file_path": "C:/idea/productManagerNotFoundException"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Repository" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean verify" />

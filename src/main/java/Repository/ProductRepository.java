@@ -2,7 +2,7 @@ package Repository;
 import domein.Product;
 
 public class ProductRepository {
-    protected  Product[] products = new Product[0];
+    protected Product[] products = new Product[0];
 
     public void add(Product item) {
         Product[] tmp = new Product[products.length + 1];
@@ -12,12 +12,24 @@ public class ProductRepository {
         tmp[tmp.length - 1] = item;
         products = tmp;
     }
-    public Product[] findAll(){
+
+    public Product[] findAll() {
         return products;
     }
 
-    public Product[] removeId(int id) {
+    public Product findById(int id) {
+        for (Product product : products) {
+            if (product.getId() == id) {
+                return product;
+            }
+        }
+        return null;
+    }
 
+    public Product[] removeById(int id) {
+        if (findById(id) == null) {
+            throw new NotFoundException("нет такого удаления:" + id);
+        }
         Product[] tmp = new Product[products.length - 1];
         int copyToIndex = 0;
         for (Product item : products) {
@@ -30,4 +42,9 @@ public class ProductRepository {
         return products;
     }
 }
+
+
+
+
+
 

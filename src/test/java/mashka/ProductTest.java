@@ -1,4 +1,5 @@
 package mashka;
+import Repository.NotFoundException;
 import Repository.ProductRepository;
 import domein.Product;
 import domein.Book;
@@ -85,11 +86,23 @@ public class ProductTest {
 
 
         Product[] expected = {book1,book3,phone1,phone2,phone3};
-        Product[] actual = repo.removeId(2);
+        Product[] actual = repo.removeById(2);
         Assertions.assertArrayEquals(expected, actual);
 
     }
+    @Test
+    public void test6(){
 
+        repo.add(book1);
+        repo.add(book2);
+        repo.add(book3);
+        repo.add(phone1);
+        repo.add(phone2);
+        repo.add(phone3);
 
+        Assertions.assertThrows(NotFoundException.class, () -> {
+            repo.removeById(12);
+        });
+        }
 
-}
+    }
